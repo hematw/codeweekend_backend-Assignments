@@ -1,0 +1,4 @@
+Muhammad, Akhtar, 2000-03-12, Afghanistan, Farming
+Fatima, Aziz, 1999-09-07, Afghanistan, Weaving
+Ahmad, Farooqi, 2002-06-20, Afghanistan, Carpentry
+Amina, Khalil, 2001-01-28, Afghanistan, Teaching
