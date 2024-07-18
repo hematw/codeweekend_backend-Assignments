@@ -9,7 +9,11 @@ const instructorsRouter = express.Router();
 instructorsRouter.get("/", (req, res) => {
     let filteredInstructors = instructors;
     for (let prop in req.query) {
-        filteredInstructors = filter(filteredInstructors, prop, req.query[prop].split(","));
+        try {
+            filteredInstructors = filter(filteredInstructors, prop, req.query[prop].split(","));
+        } catch (error) {
+            return res.status(400).json({ message: error.message });
+        }
     }
     res.status(200).json({ instructors: filteredInstructors });
 });

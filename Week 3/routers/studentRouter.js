@@ -29,11 +29,8 @@ studentRouter.get("/:id(\\d+)", (req, res) => {
 
 studentRouter.get("/:major([a-zA-Z0-9%20]+)", (req, res) => {
     const { major } = req.params;
-    let student = students.find(student => student.major.toLowerCase() == major.toLowerCase())
-    if (student) {
-        return res.status(200).json({ student })
-    }
-    res.status(402).json({ message: `invalid student id ${id}` })
+    let student = students.filter(student => student.major.toLowerCase() == major.toLowerCase())
+    return res.status(200).json({ student })
 })
 
 module.exports = studentRouter;

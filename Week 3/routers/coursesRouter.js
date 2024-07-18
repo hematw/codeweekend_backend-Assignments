@@ -8,7 +8,11 @@ const coursesRouter = express.Router()
 coursesRouter.get("/", (req, res) => {
     let filteredCourses = courses;
     for (let prop in req.query) {
-        filteredCourses = filter(filteredCourses, prop, req.query[prop].split(","));
+        try {
+            filteredCourses = filter(filteredCourses, prop, req.query[prop].split(","));
+        } catch (error) {
+            return res.status(400).json({ message: error.message });
+        }
     }
     res.status(200).json({ courses: filteredCourses });
 })
