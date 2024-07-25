@@ -1,19 +1,18 @@
 const express = require("express");
-const instructorsRouter = require("./routers/instructorsRouter")
-const coursesRouter = require("./routers/coursesRouter")
-const studentRouter = require("./routers/studentRouter")
-
+const instructorsRouter = require("./routers/instructorsRouter");
+const coursesRouter = require("./routers/coursesRouter");
+const studentRouter = require("./routers/studentRouter");
 
 const app = express();
 const PORT = 3000;
 
+app.use(express.json());
 app.use("/instructors", instructorsRouter);
 app.use("/courses", coursesRouter);
 app.use("/students", studentRouter);
 
-
 app.use((req, res) => {
-  res.status(404).json({ message: 'Incorrect endpoint resource Not Found!' });
+  res.status(404).json({ message: "Incorrect endpoint resource Not Found!" });
 });
 
 app.listen(PORT, (error) => {
