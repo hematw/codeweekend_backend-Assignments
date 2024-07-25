@@ -76,7 +76,7 @@ instructorsRouter.post("/", (req, res) => {
   };
 
   instructors.push(newIns);
-  res.json({ msg: "ok" });
+  res.status(201).json({ newIns });
 });
 
 instructorsRouter.put("/:id", (req, res) => {
