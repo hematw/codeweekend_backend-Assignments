@@ -1,0 +1,130 @@
+[
+    {
+        "name": "accent chair",
+        "price": 25,
+        "company": "Nike",
+        "rating": 4
+    },
+    {
+        "name": "albany sectional",
+        "price": 109,
+        "company": "Adidas",
+        "rating": 5
+    },
+    {
+        "name": "albany table",
+        "price": 309,
+        "company": "Louis Vuitton",
+        "rating": 4.9
+    },
+    {
+        "name": "armchair",
+        "price": 125,
+        "company": "Gucci",
+        "rating": 4.8
+    },
+    {
+        "name": "bar stool",
+        "price": 40,
+        "company": "New Urban",
+        "rating": 4.6
+    },
+    {
+        "name": "dining table",
+        "price": 42,
+        "company": "Nike",
+        "rating": 4.55
+    },
+    {
+        "name": "emperor bed",
+        "price": 23,
+        "company": "Adidas"
+    },
+    {
+        "name": "entertainment center",
+        "price": 59,
+        "featured": true,
+        "company": "Louis Vuitton"
+    },
+    {
+        "name": "high-back bench",
+        "price": 39,
+        "featured": true,
+        "company": "Gucci"
+    },
+    {
+        "name": "leather sofa",
+        "price": 99,
+        "company": "New Urban"
+    },
+    {
+        "name": "modern bookshelf",
+        "price": 31,
+        "featured": true,
+        "company": "Nike"
+    },
+    {
+        "name": "modern poster",
+        "price": 30,
+        "company": "Adidas"
+    },
+    {
+        "name": "shelf",
+        "price": 30,
+        "company": "Louis Vuitton"
+    },
+    {
+        "name": "simple chair",
+        "price": 109,
+        "company": "Gucci"
+    },
+    {
+        "name": "sofa set",
+        "price": 129,
+        "company": "New Urban"
+    },
+    {
+        "name": "suede armchair",
+        "price": 15,
+        "company": "Nike"
+    },
+    {
+        "name": "utopia sofa",
+        "price": 79,
+        "featured": true,
+        "company": "Adidas"
+    },
+    {
+        "name": "vase table",
+        "price": 120,
+        "featured": true,
+        "company": "Louis Vuitton"
+    },
+    {
+        "name": "wooden bed",
+        "price": 25,
+        "company": "Gucci"
+    },
+    {
+        "name": "wooden desk",
+        "price": 15,
+        "company": "New Urban"
+    },
+    {
+        "name": "wooden desk",
+        "price": 40,
+        "company": "Nike"
+    },
+    {
+        "name": "wooden table",
+        "price": 23,
+        "featured": true,
+        "company": "Adidas"
+    },
+    {
+        "name": "a first wooden table",
+        "price": 23,
+        "featured": true,
+        "company": "Louis Vuitton"
+    }
+]
