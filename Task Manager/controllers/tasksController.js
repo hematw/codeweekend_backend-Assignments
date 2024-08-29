@@ -20,9 +20,6 @@ const getAllTasks = asyncHandler(async (req, res) => {
 
 const createTask = asyncHandler(async (req, res) => {
   const task = await Task.create(req.validationResult.value);
-  if (!task) {
-    res.status(404).json({ msg: "Task not Found!" });
-  }
   res.status(201).json({ msg: "Task created!", task });
 });
 
