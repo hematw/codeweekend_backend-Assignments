@@ -28,7 +28,7 @@ app.use(helmet());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.json({ msg: "Hello ATOM Hemat" });
+  res.json({ msg: "Hello ATOM Hemat!" });
 });
 
 app.use("/api/v1/auth", authRouter);
