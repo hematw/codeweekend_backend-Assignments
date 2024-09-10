@@ -31,7 +31,6 @@ app.use((req, res, next) => {
 });
 
 app.get("/secret", (req, res) => {
-  console.log("user data", req.user);
   res.render("secret", { username: req.user.username.toUpperCase() });
 });
 

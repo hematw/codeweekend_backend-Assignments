@@ -1,8 +1,22 @@
 const { Router } = require("express");
 const createUser = require("../controllers/user");
-const passportConfig = require("../middlewares/passportConfig")
+const passportConfig = require("../middlewares/passportConfig");
 
 const router = Router();
+
+router.get(
+  "/auth/github",
+  passportConfig.authenticate("github", { scope: ["user:email"] })
+);
+
+router.get(
+  "/auth/github/callback",
+  passportConfig.authenticate("github", { failureRedirect: "/login" }),
+  function (req, res) {
+    // Successful authentication, redirect home.
+    res.redirect("/secret");
+  }
+);
 
 router
   .route("/login")
