@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
@@ -8,6 +9,8 @@
     "mongoose": "^8.6.1",
     "passport": "^0.7.0",
     "passport-github": "^1.1.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "passport.socketio": "^3.7.0",
+    "socket.io": "^4.7.5"
   }
 }
