@@ -71,3 +71,9 @@ a {
     margin: auto;
     width: 120px;
 }
+
+.logout {
+  padding: 4px;
+  background-color: red;
+  display: inline-block;
+}

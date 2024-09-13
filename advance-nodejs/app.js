@@ -14,7 +14,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server);
 
-app.use(express.static('public'))
+app.use(express.static("public"));
 
 io.use(
   passportSocketIO.authorize({
@@ -44,8 +44,11 @@ io.on("connection", (socket) => {
     connected: true,
   });
 
-  socket.on("chat message", (msg) => {
-    console.log("message: " + msg);
+  socket.on("chat message", (message) => {
+    io.emit("chat message", {
+      username: socket.request.user.username,
+      message,
+    });
   });
 
   socket.on("disconnect", () => {
